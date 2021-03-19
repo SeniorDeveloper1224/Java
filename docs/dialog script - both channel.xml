@@ -1,0 +1,303 @@
+PAYMENT INITIALIZATION
+
+<?xml version="1.0" encoding="utf-8"?>
+<CardServiceRequest WorkstationID="POS" RequestID="325" RequestType="CardPayment"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <POSdata LanguageCode="nl">
+        <POSTimeStamp>2015-10-16T09:29:36.4660066+02:00</POSTimeStamp>
+        <ShiftNumber>123</ShiftNumber>
+        <PrinterStatus>Available</PrinterStatus>
+        <E-JournalStatus>Available</E-JournalStatus>
+        <JournalPrinterStatus>Available</JournalPrinterStatus>
+    </POSdata>
+    <TotalAmount Currency="EUR">10.00</TotalAmount>
+    <CardCircuitCollection></CardCircuitCollection>
+</CardServiceRequest>
+
+
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.1" RequestType="Output"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay">
+        <TextLine Height="Single" Width="Single"> UW KAART AUB </TextLine>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.1" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay" OutResult="Success"></Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.2" RequestType="Output"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay">
+        <TextLine Height="Single" Width="Single"></TextLine>
+        <TextLine Height="Single" Width="Single">IN BEHANDELING </TextLine>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.2" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay" OutResult="Success"></Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.3" RequestType="Output"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay">
+        <TextLine Height="Single" Width="Single"></TextLine>
+        <TextLine Height="Single" Width="Single">IN BEHANDELING </TextLine>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.3" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay" OutResult="Success"></Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.4" RequestType="Output"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay">
+        <TextLine Height="Single" Width="Single">MAESTRO </TextLine>
+        <TextLine Height="Single" Width="Single">IN BEHANDELING </TextLine>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.4" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay" OutResult="Success"></Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.5" RequestType="Output"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay">
+        <TextLine Height="Single" Width="Single">MAESTRO </TextLine>
+        <TextLine Height="Single" Width="Single">KLANT VOERT PIN IN </TextLine>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.5" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay" OutResult="Success"></Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.6" RequestType="Output"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay">
+        <TextLine Height="Single" Width="Single">MAESTRO </TextLine>
+        <TextLine Height="Single" Width="Single">IN BEHANDELING </TextLine>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.6" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay" OutResult="Success"></Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.7" RequestType="Output"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay">
+        <TextLine Height="Single" Width="Single">AKKOORD </TextLine>
+        <TextLine Height="Single" Width="Single">KAART TERUGNEMEN </TextLine>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.7" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay" OutResult="Success"></Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.8" RequestType="Output"
+    xmlns="http://www.nrf-
+arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="Printer" ReceiptCopies="1">
+        <TextLine Width="Double"> Kopie Kaarthouder</TextLine>
+        <TextLine></TextLine>
+        <TextLine Height="Double">********* PAS OP: TEST SYSTEEM *********</TextLine>
+        <TextLine></TextLine>
+        <TextLine>Terminal: 20000002 Merchant: 1234 </TextLine>
+        <TextLine>Periode: 5289 Transactie: 10154565</TextLine>
+        <TextLine>MAESTRO (A0000000043060)</TextLine>
+        <TextLine>Kaart: xxxxxxxxxxxx0276xxx</TextLine>
+        <TextLine>Kaartnr: 01 </TextLine>
+        <TextLine></TextLine>
+        <TextLine Height="Double" Width="Double">BETALING</TextLine>
+        <TextLine>16/10/2015 09:30 Auth. code: 123456</TextLine>
+        <TextLine></TextLine>
+- OPI for ITS P400 Version 1.11 47 / 94
+
+        <TextLine Height="Double" Width="Double">Totaal: 10,00 EUR</TextLine>
+        <TextLine></TextLine>
+        <TextLine Height="Double" Width="Double"> AKKOORD</TextLine>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.8" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="Printer" OutResult="Success"></Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.9" RequestType="Output"
+    xmlns="http://www.nrf-
+arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="JournalPrinter" ReceiptCopies="1">
+        <TextLine> JOURNAAL</TextLine>
+        <TextLine></TextLine>
+        <TextLine Height="Double">********* PAS OP: TEST SYSTEEM *********</TextLine>
+        <TextLine></TextLine>
+        <TextLine>Terminal: 20000002 Merchant: 1234 </TextLine>
+        <TextLine>Periode: 5289 Transactie: 10154565</TextLine>
+        <TextLine>MAESTRO (A0000000043060)</TextLine>
+        <TextLine>Kaart: xxxxxxxxxxxx0276xxx</TextLine>
+        <TextLine>Kaartnr: 01 </TextLine>
+        <TextLine></TextLine>
+        <TextLine Height="Double" Width="Double">BETALING</TextLine>
+        <TextLine>16/10/2015 09:30 Auth. code: 123456</TextLine>
+        <TextLine></TextLine>
+        <TextLine Height="Double" Width="Double">Totaal: 10,00 EUR</TextLine>
+        <TextLine Height="Double" Width="Double"> AKKOORD</TextLine>
+        <TextLine>ACQUIRER ID: 00000002</TextLine>
+        <TextLine>TRANSACTION TREATMENT RES. 0000</TextLine>
+        <TextLine Width="Double"> ================</TextLine>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.9" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="JournalPrinter" OutResult="Success"></Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.1" RequestType="Output"
+    xmlns="http://www.nrf-
+arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay">
+        <TextLine Height="Single" Width="Single">AKKOORD </TextLine>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.1" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="CashierDisplay" OutResult="Success">
+	</Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceRequest WorkstationID="POS" RequestID="325.2" RequestType="Output"
+    xmlns="http://www.nrf-
+arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="E-Journal">
+        <E-Journal>
+            <ShopInfo>
+                <ShopLocation></ShopLocation>
+                <TerminalIdentifier>20000002</TerminalIdentifier>
+                <MerchantUserIdentifier>1234</MerchantUserIdentifier>
+            </ShopInfo>
+            <TransactionInfo>
+                <PeriodNumber>5289</PeriodNumber>
+                <TransactionIdentifier>10154565</TransactionIdentifier>
+                <ServiceLabelName>BETALING</ServiceLabelName>
+                <DateAndTime>2015-10-16T09:30</DateAndTime>
+                <AuthorisationCode>123456</AuthorisationCode>
+                <DetailedAmount>10,00</DetailedAmount>
+                <TotalAmount Currency="EUR">10,00</TotalAmount>
+                <TransactionResultText>AKKOORD</TransactionResultText>
+                <AcquirerIdentifier>00000002</AcquirerIdentifier>
+                <TrxTermTreatmentResult>0000</TrxTermTreatmentResult>
+            </TransactionInfo>
+            <CardInfo>
+                <CardLabelName>Maestro</CardLabelName>
+                <ApplicationIdentifier>MAESTRO</ApplicationIdentifier>
+                <IssuerLabelName></IssuerLabelName>
+                <CardNumber>xxxxxxxxxxxx0276xxx</CardNumber>
+- OPI for ITS P400 Version 1.11 48 / 94
+
+                <CardSequenceNumber>01</CardSequenceNumber>
+                <ExpirationDate></ExpirationDate>
+                <CardHolderName></CardHolderName>
+                <Account></Account>
+            </CardInfo>
+        </E-Journal>
+    </Output>
+</DeviceRequest>
+
+PC -> DEVICE
+
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceResponse WorkstationID="POS" RequestID="325.2" RequestType="Output" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Output OutDeviceTarget="E-Journal" OutResult="Success"></Output>
+</DeviceResponse>
+
+DEVICE -> PC
+
+<?xml version="1.0" encoding="UTF-8"?>
+<CardServiceResponse WorkstationID="POS" RequestID="325" RequestType="CardPayment" OverallResult="Success"
+    xmlns="http://www.nrf-arts.org/IXRetail/namespace">
+    <Terminal TerminalID="20000002" STAN="10154565"></Terminal>
+    <Tender LanguageCode="nl">
+        <TotalAmount Currency="EUR">10.00</TotalAmount>
+        <Authorisation TimeStamp="2015-10-16T09:30:18" ApprovalCode="123456"
+MaskedCardNumber="xxxxxxxxxxxxxxx6xxx" AcquirerBatch="5289" CardCircuit="MAES" ReceiptCopies="1"></Authorisation>
+    </Tender>
+</CardServiceResponse>

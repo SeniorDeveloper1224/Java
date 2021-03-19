@@ -1,0 +1,6 @@
+package com.openbravo.pos.payment.ccv.enums;
+
+public enum EnumOverallResult {
+    Success,
+    PrintLastTicket
+}
